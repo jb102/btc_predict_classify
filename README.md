@@ -24,9 +24,3 @@ print(predict_next_average(inv))
 This method classifies whether the price of an asset is increasing or decreasing. The logic is as follows: if the gradient of the high values for the time period is strictly positive, then the trend is "positive" if the gradient of the low values is also strictly positive, otherwise it is "volatile". If the gradient of the high and low values are both strictly negative, the trend is "decreasing". If none of these cases apply, the trend is "other".
 # Example:
 print(classify_trend(i1))
-
-if gradient(high_values) > 0:
-        return "increasing" if gradient(low_values) > 0 else "volatile"
-    elif gradient(low_values) < 0 and gradient(low_values) < 0:
-        return "decreasing"
-    return "other"
