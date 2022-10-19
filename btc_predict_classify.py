@@ -2,11 +2,6 @@ import csv
 import time
 import calendar
 
-"""
-    Part D
-    Please provide definitions for the following clas and functions
-"""
-
 # Class Investment:
 # Instance variables
 #	start date
@@ -207,7 +202,7 @@ def classify_trend(investment):
         return "decreasing"
     return "other"
 
-# Replace the body of this main function for your testing purposes
+# Example
 if __name__ == "__main__":
     # Start the program
     data = []
@@ -216,7 +211,6 @@ if __name__ == "__main__":
         data = [r for r in reader]
     f.close()
 
-    #test cases
     i1 = Investment(data,'04/05/2015','27/05/2015')
     i2 = Investment(data,'01/02/2016','28/02/2016')
     i3 = Investment(data,'08/12/2016','11/12/2016')
